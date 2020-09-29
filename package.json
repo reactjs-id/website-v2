@@ -1,10 +1,9 @@
 {
-  "name": "nextjs-typescript-quickstart",
+  "name": "@reactjs-id/website",
   "version": "1.0.0",
-  "description": "Get started on Next.js with TypeScript in seconds.",
+  "description": "A New Web ReactJS Indonesia",
   "main": "N/A",
-  "repository": "https://github.com/resir014/nextjs-typescript-quickstart",
-  "author": "Resi Respati <resir014@gmail.com>",
+  "repository": "https://github.com/reactjs-id/website",
   "license": "Unlicense",
   "private": true,
   "scripts": {
@@ -25,8 +24,8 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@types/node": "^12.6.2",
-    "@types/react": "^16.9.46",
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/styled-jsx": "^2.2.8",
     "cross-env": "^7.0.2",
@@ -35,6 +34,6 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.3"
   }
 }
