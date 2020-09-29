@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "postbuild": "next-on-netlify",
     "start": "next start",
     "format": "prettier --write \"./**/*.{ts,tsx}\"",
     "lint": "eslint \"**/*.{ts,tsx}\" \"*.config.js\"",
@@ -20,6 +21,7 @@
     "date-fns": "^2.15.0",
     "modern-normalize": "^0.7.0",
     "next": "^9.5.2",
+    "next-on-netlify": "2.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

@@ -7,6 +7,8 @@
 
 # Static export path
 out/
+out_functions/
+out_publish/
 
 # Logs
 logs
