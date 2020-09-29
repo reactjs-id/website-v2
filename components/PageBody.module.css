@@ -1,0 +1,9 @@
+.root {
+  padding: 0rem 1.5rem 2rem;
+}
+.root p:first-child {
+  margin-top: 0;
+}
+.root p:last-child {
+  margin-bottom: 0;
+}

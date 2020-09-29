@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: white;
+}
+.root a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.75rem;
+}
+.root a:hover,
+.root a:focus {
+  text-decoration: underline;
+}
+.root a:first-child {
+  margin-left: 0;
+}
+.root a:last-child {
+  margin-right: 0;
+}
+
+.left {
+  margin-right: 1.5rem;
+  user-select: none;
+}
+
+.right {
+  flex: 1 1 auto;
+}
