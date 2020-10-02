@@ -18,10 +18,15 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@chakra-ui/core": "0.8.0",
+    "@emotion/core": "10.0.35",
+    "@emotion/styled": "10.0.27",
     "date-fns": "^2.15.0",
+    "emotion-theming": "10.0.27",
     "modern-normalize": "^0.7.0",
     "next": "^9.5.2",
     "next-on-netlify": "2.4.0",
+    "next-seo": "4.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
