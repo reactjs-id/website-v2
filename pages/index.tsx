@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Page from '~/components/Page'
 import PageHeader from '~/components/PageHeader'
 import PageBody from '~/components/PageBody'
-import Navigation from '~/components/Navigation'
+import TopNavigation from '~/components/TopNavigation'
 import Content from '~/components/Content'
 import relativeTime from '~/utils/relativeTime'
 
@@ -13,7 +13,7 @@ const lastUpdated = '2015-01-25T07:25:15+07:00'
 
 const IndexPage: NextPage = () => (
   <Page>
-    <Navigation />
+    <TopNavigation />
     <Content>
       <PageHeader>Hello world.</PageHeader>
       <PageBody>

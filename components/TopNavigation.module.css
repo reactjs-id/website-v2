@@ -1,0 +1,65 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(auto, 1140px) 1fr 1fr;
+  background-color: #111;
+  color: #fff;
+  height: 80px;
+  z-index: 50;
+}
+
+.Inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-column: 3/4;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.Inner li:hover,
+.Inner li:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.BrandLogo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  margin-right: auto;
+}
+
+.BrandLogo > a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  height: 100%;
+  line-height: 1;
+}
+
+.MenuItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.MenuItem > a {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .BrandLogo > a {
+    font-size: 1.5rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
