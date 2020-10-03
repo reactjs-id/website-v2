@@ -13,6 +13,9 @@ const Navigation: React.FC = () => (
       <Link href="/about">
         <a>About</a>
       </Link>
+      <Link href="/faq">
+        <a>FAQ</a>
+      </Link>
     </nav>
   </header>
 )
