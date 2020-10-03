@@ -15,7 +15,8 @@
     "lint": "eslint \"**/*.{ts,tsx}\" \"*.config.js\"",
     "now-build": "cross-env BUILD_TARGET=serverless next build",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "validate": "yarn lint && yarn type-check"
   },
   "dependencies": {
     "@chakra-ui/core": "0.8.0",

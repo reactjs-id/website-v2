@@ -12,7 +12,7 @@ import relativeTime from '~/utils/relativeTime'
 const lastUpdated = '2018-09-25T19:30:01+07:00'
 
 const AboutPage: NextPage = () => (
-  <Page title="About | Next.js TypeScript Quickstart">
+  <Page title="About">
     <Navigation />
     <Content>
       <PageHeader>About us.</PageHeader>
