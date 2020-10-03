@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Box, Grid } from '@chakra-ui/core'
+import { Stack, Grid } from '@chakra-ui/core'
 import styled from '@emotion/styled'
 
 const Root = styled(Grid)`
@@ -12,11 +12,8 @@ const Root = styled(Grid)`
   }
 `
 
-const Inner = styled('div')`
-  display: flex;
+const Inner = styled(Stack)`
   grid-column: 3/4;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 `
 
@@ -32,7 +29,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className }) => (
   <Root as="footer" templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr" className={className}>
-    <Inner>
+    <Inner align="center" justify="center">
       <section>
         <Paragraph>&copy; 2019 ReactJS ID.</Paragraph>
         <Paragraph>
