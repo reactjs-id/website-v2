@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Stack, Grid } from '@chakra-ui/core'
+import { Stack, Grid, Text } from '@chakra-ui/core'
 import styled from '@emotion/styled'
 
 const Root = styled(Grid)`
@@ -17,12 +17,6 @@ const Inner = styled(Stack)`
   text-align: center;
 `
 
-const Paragraph = styled('p')`
-  margin: 0;
-  font-size: 12px;
-  line-height: 20px;
-`
-
 interface FooterProps {
   className?: string
 }
@@ -31,8 +25,10 @@ const Footer: React.FC<FooterProps> = ({ className }) => (
   <Root as="footer" templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr" className={className}>
     <Inner align="center" justify="center">
       <section>
-        <Paragraph>&copy; 2019 ReactJS ID.</Paragraph>
-        <Paragraph>
+        <Text margin="0" lineHeight="20px" fontSize="12px">
+          &copy; 2019 ReactJS ID.
+        </Text>
+        <Text margin="0" lineHeight="20px" fontSize="12px">
           Kode sumber situs ini tersedia di{' '}
           <a href="https://github.com/reactjs-id/reactjs.id" target="_blank" rel="noopener noreferrer">
             GitHub
@@ -42,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => (
             Transparent Textures
           </a>
           .
-        </Paragraph>
+        </Text>
       </section>
     </Inner>
   </Root>
