@@ -1,0 +1,7 @@
+.link {
+  background-color: rgba(168, 216, 252, 0.5);
+}
+
+.link:hover {
+  background-color: rgba(90, 184, 255, 0.5);
+}
