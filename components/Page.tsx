@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
 import styles from './Page.module.css'
 
@@ -9,9 +9,7 @@ interface PageProps {
 
 const Page: React.FC<PageProps> = ({ children, title }) => (
   <div className={styles.root}>
-    <Head>
-      <title>{title || 'Next.js TypeScript Quickstart'}</title>
-    </Head>
+    <NextSeo title={title || ''} />
     {children}
   </div>
 )

@@ -7,7 +7,8 @@ import Head from 'next/head'
 
 import AppProvider from '~/components/AppProvider'
 
-export default function CustomAppPage({ Component, pageProps }: AppProps) {
+export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
   return (
     <AppProvider>
       <Head>
@@ -18,8 +19,10 @@ export default function CustomAppPage({ Component, pageProps }: AppProps) {
         title="ReactJS ID"
         titleTemplate="%s · ReactJS Indonesia"
         description="ReactJS ID adalah komunitas para developer React dan React Native. Kami mengadakan ajang meetup setiap bulannya, dimana para developer React bertukar informasi mengenai React dan ekosistemnya."
+        canonical={baseUrl + router.asPath || ''}
         openGraph={{
           title: 'ReactJS ID',
+          url: baseUrl,
           description:
             'ReactJS ID adalah komunitas para developer React dan React Native. Kami mengadakan ajang meetup setiap bulannya, dimana para developer React bertukar informasi mengenai React dan ekosistemnya.',
           type: 'website',
