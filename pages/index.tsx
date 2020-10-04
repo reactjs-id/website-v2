@@ -3,8 +3,8 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 
 import Page from '~/components/Page'
-import PageHeader from '~/components/PageHeader'
-import PageBody from '~/components/PageBody'
+import PageHeader from '~/components/Layout/PageHeader'
+import PageBody from '~/components/Layout/PageBody'
 import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
 import relativeTime from '~/utils/relativeTime'
@@ -15,7 +15,7 @@ const IndexPage: NextPage = () => (
   <Page>
     <Navigation />
     <Content>
-      <PageHeader>Hello world.</PageHeader>
+      <PageHeader title="Hello world." />
       <PageBody>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Certe non potest. Negabat igitur ullam esse artem, quae ipsa a se
