@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { NextPage } from 'next'
-import { Link, Heading, List, ListItem, Text, Divider, Tag, css } from '@chakra-ui/core'
+import { Link, Heading, List, ListItem, Text, Divider, Tag } from '@chakra-ui/core'
 
 import Page from '~/components/Page'
 import PageHeader from '~/components/PageHeader'
