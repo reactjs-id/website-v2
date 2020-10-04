@@ -8,19 +8,21 @@ import PageBody from '~/components/PageBody'
 import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
 
+const paddingContent: string[] = ['0rem 1.5rem 2rem', '0rem 17.5rem 2rem']
+
 const FAQPage: NextPage = () => (
   <Page title="FAQ">
     <Navigation />
     <Content>
       <PageHeader>
-        <Box p={['0rem 1.5rem 2rem', '0rem 17.5rem 2rem']}>
+        <Box p={paddingContent}>
           <Heading as="h1" size="2xl">
             FAQ
           </Heading>
         </Box>
       </PageHeader>
       <PageBody>
-        <Box p={['0rem 1.5rem 2rem', '0rem 17.5rem 2rem']}>
+        <Box p={paddingContent}>
           <Text>
             Halaman ini berisi pertanyaan yang sering ditanyakan pada grup Telegram kami. Ingin menambahkan pertanyaan baru? Submit di{' '}
             <Link href="https://github.com/reactjs-id/website">repositori GitHub ini</Link>.
