@@ -5,3 +5,13 @@
 .link:hover {
   background-color: rgba(90, 184, 255, 0.5);
 }
+
+.FAQPage {
+  padding: 0rem 15.5rem 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .FAQPage {
+    padding: 0rem 1.5rem 2rem;
+  }
+}
