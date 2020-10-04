@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => (
     <Inner align="center" justify="center">
       <section>
         <Text margin="0" lineHeight="20px" fontSize="12px">
-          &copy; 2019 ReactJS ID.
+          &copy; 2020 ReactJS ID.
         </Text>
         <Text margin="0" lineHeight="20px" fontSize="12px">
           Kode sumber situs ini tersedia di{' '}
