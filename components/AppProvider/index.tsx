@@ -8,10 +8,8 @@ import theme from '~/utils/theme'
 const AppProvider: React.FC = ({ children }) => (
   <CacheProvider value={cache}>
     <ThemeProvider theme={theme}>
-      <ColorModeProvider value="light">
-        <CSSReset />
-        {children}
-      </ColorModeProvider>
+      <CSSReset />
+      <ColorModeProvider value="light">{children}</ColorModeProvider>
     </ThemeProvider>
   </CacheProvider>
 )
