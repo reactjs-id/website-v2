@@ -2,10 +2,7 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 
-import Page from '~/components/Page'
-import PageHeader from '~/components/PageHeader'
-import PageBody from '~/components/PageBody'
-import TopNavigation from '~/components/TopNavigation'
+import { Page, PageHeader, PageBody } from '~/components/Layout'
 import Content from '~/components/Content'
 import relativeTime from '~/utils/relativeTime'
 
@@ -13,9 +10,8 @@ const lastUpdated = '2015-01-25T07:25:15+07:00'
 
 const IndexPage: NextPage = () => (
   <Page>
-    <TopNavigation />
     <Content>
-      <PageHeader>Hello world.</PageHeader>
+      <PageHeader title="Hello world." />
       <PageBody>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Certe non potest. Negabat igitur ullam esse artem, quae ipsa a se

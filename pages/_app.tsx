@@ -1,9 +1,7 @@
 import * as React from 'react'
-
 import type { AppProps } from 'next/app'
-import { Box, Flex } from '@chakra-ui/core'
-import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
 
 import AppProvider from '~/components/AppProvider'
 
@@ -30,11 +28,7 @@ export default function CustomAppPage({ Component, pageProps, router }: AppProps
         }}
       />
 
-      <Flex flexDir="column" minH="100vh" justifyContent="space-between">
-        <Box as="main" flexGrow={1}>
-          <Component {...pageProps} />
-        </Box>
-      </Flex>
+      <Component {...pageProps} />
     </AppProvider>
   )
 }
