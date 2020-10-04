@@ -30,6 +30,7 @@
   height: 100%;
   margin-right: auto;
   padding: 8px 16px;
+  cursor: pointer;
 }
 
 .BrandLogo > a {

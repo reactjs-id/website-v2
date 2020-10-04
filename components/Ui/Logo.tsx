@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 interface LogoProps extends React.SVGAttributes<SVGSVGElement> {
-  title?: string
+  title: string
 }
 
 function Logo({ fill, width, height, style, ...rest }: LogoProps) {

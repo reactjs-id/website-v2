@@ -1,15 +1,25 @@
 import * as React from 'react'
-
 import type { AppProps } from 'next/app'
-import { Box, Flex } from '@chakra-ui/core'
-import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
+import styled from '@emotion/styled'
+import customColors from '../utils/theme'
 
 import AppProvider from '~/components/AppProvider'
-import TopNavigation from '~/components/layout/TopNavigation'
+import TopNavigation from '~/components/Layout/TopNavigation'
 
 export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
+
+  const TopNavigationShellFallback = styled('div')`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: ${customColors.colors.gray08};
+    z-index: 0;
+  `
   return (
     <AppProvider>
       <Head>
@@ -30,13 +40,10 @@ export default function CustomAppPage({ Component, pageProps, router }: AppProps
           site_name: 'ReactJS ID'
         }}
       />
+      <TopNavigation title="ReactJS ID" />
+      <TopNavigationShellFallback />
 
-      <Flex flexDir="column" minH="100vh" justifyContent="space-between">
-        <TopNavigation />
-        <Box as="main" flexGrow={1}>
-          <Component {...pageProps} />
-        </Box>
-      </Flex>
+      <Component {...pageProps} />
     </AppProvider>
   )
 }
