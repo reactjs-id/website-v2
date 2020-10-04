@@ -2,10 +2,9 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import { Link, Heading, List, ListItem, Text, Divider, Tag } from '@chakra-ui/core'
 
-import Page from '~/components/Page'
+import { Page, PageBody, PageHeader } from '~/components/Layout'
 import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
-import { PageBody, PageHeader } from '~/components/Layout'
 
 const FAQPage: NextPage = () => (
   <Page title="FAQ">
