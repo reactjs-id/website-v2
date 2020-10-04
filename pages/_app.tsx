@@ -6,6 +6,7 @@ import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
 
 import AppProvider from '~/components/AppProvider'
+import Footer from '~/components/layout/Footer'
 
 export default function CustomAppPage({ Component, pageProps }: AppProps) {
   return (
@@ -31,6 +32,7 @@ export default function CustomAppPage({ Component, pageProps }: AppProps) {
         <Box as="main" flexGrow={1}>
           <Component {...pageProps} />
         </Box>
+        <Footer />
       </Flex>
     </AppProvider>
   )
