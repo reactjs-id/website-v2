@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { NextPage } from 'next'
-import { Link, Heading, List, ListItem, Text, Divider, Tag } from '@chakra-ui/core'
+import { Link, Heading, List, ListItem, Text, Divider, Tag, Box } from '@chakra-ui/core'
 
 import Page from '~/components/Page'
 import PageHeader from '~/components/PageHeader'
@@ -8,27 +8,22 @@ import PageBody from '~/components/PageBody'
 import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
 
-import styles from './faq.module.css'
-
 const FAQPage: NextPage = () => (
   <Page title="FAQ">
     <Navigation />
     <Content>
       <PageHeader>
-        <section className={styles.FAQPage}>
+        <Box p={['0rem 1.5rem 2rem', '0rem 17.5rem 2rem']}>
           <Heading as="h1" size="2xl">
             FAQ
           </Heading>
-        </section>
+        </Box>
       </PageHeader>
       <PageBody>
-        <section className={styles.FAQPage}>
+        <Box p={['0rem 1.5rem 2rem', '0rem 17.5rem 2rem']}>
           <Text>
             Halaman ini berisi pertanyaan yang sering ditanyakan pada grup Telegram kami. Ingin menambahkan pertanyaan baru? Submit di{' '}
-            <Link className={styles.link} href="https://github.com/reactjs-id/website">
-              repositori GitHub ini
-            </Link>
-            .
+            <Link href="https://github.com/reactjs-id/website">repositori GitHub ini</Link>.
           </Text>
           <Divider />
           <Heading as="h3" size="lg">
@@ -38,18 +33,12 @@ const FAQPage: NextPage = () => (
           <List styleType="disc">
             <ListItem>
               Kami menyarankan untuk membaca dokumentasi resmi React yang bisa kalian temui{' '}
-              <Link className={styles.link} href="https://reactjs.org/">
-                di situs resmi React
-              </Link>
-              .
+              <Link href="https://reactjs.org/">di situs resmi React</Link>.
             </ListItem>
             <ListItem>
               Jika kalian merasa dokumentasi React masih belum memadai, atau kalian tipe yang lebih ingin belajar melalui video, maka Anda
               bisa menonton video mas <b>prawito hudoro</b> yang bisa kalian tonton di{' '}
-              <Link className={styles.link} href="https://www.youtube.com/watch?v=5kHyviqjhCk&list=PLU4DS8KR-LJ03qEsHn9zV4qdhcWtusBqb">
-                channel YouTube-nya
-              </Link>
-              .
+              <Link href="https://www.youtube.com/watch?v=5kHyviqjhCk&list=PLU4DS8KR-LJ03qEsHn9zV4qdhcWtusBqb">channel YouTube-nya</Link>.
             </ListItem>
           </List>
           <Divider />
@@ -79,10 +68,7 @@ const FAQPage: NextPage = () => (
           <Divider />
           <Text>
             Tentu bisa. Pada dasarnya, hasil output React hanyalah file HTML statis yang dapat diunggah di host manapun. Untuk panduan
-            menggunakan Laravel dengan React, baca{' '}
-            <Link className={styles.link} href="https://laravel.com/docs/6.x/frontend#using-react">
-              dokumentasi Laravel
-            </Link>{' '}
+            menggunakan Laravel dengan React, baca <Link href="https://laravel.com/docs/6.x/frontend#using-react">dokumentasi Laravel</Link>{' '}
             berikut ini.
           </Text>
           <Divider />
@@ -93,22 +79,17 @@ const FAQPage: NextPage = () => (
           <Text>
             Tentu bisa. Mau itu Multiple Page Application (MPA) / Single Page Application (SPA), selama kita (manusia) bisa membaca, maka
             bot search engine juga bisa membacanya, karena GoogleBot juga pakai Chrome yang kita pakai.{' '}
-            <Link className={styles.link} href="https://t.me/react_id/79365">
-              ~Pradita Utama
-            </Link>
+            <Link href="https://t.me/react_id/79365">~Pradita Utama</Link>
           </Text>
           <Divider />
           <Text>Referensi terkait SEO:</Text>
           <Divider />
           <List as="ol" styleType="decimal">
             <ListItem>
-              <Link className={styles.link} href="https://t.me/react_id/77390">
-                Mitos tentang SEO dan SPA
-              </Link>
-              .
+              <Link href="https://t.me/react_id/77390">Mitos tentang SEO dan SPA</Link>.
             </ListItem>
             <ListItem>
-              <Link className={styles.link} href="https://medium.com/@pradita.utama/javascript-sosial-media-dan-seo-d9c4940e60fd">
+              <Link href="https://medium.com/@pradita.utama/javascript-sosial-media-dan-seo-d9c4940e60fd">
                 Javascript, Sosial Media dan SEO
               </Link>
               .
@@ -128,9 +109,7 @@ const FAQPage: NextPage = () => (
             </ListItem>
             <ListItem>
               CORS itu bukan bug, dia adalah safety feature agar server API kita gak bisa diakses sembarangan oleh browser{' '}
-              <Link className={styles.link} href="https://t.me/react_id/55955">
-                ~Pradita Utama
-              </Link>
+              <Link href="https://t.me/react_id/55955">~Pradita Utama</Link>
             </ListItem>
           </List>
           <Divider />
@@ -138,13 +117,10 @@ const FAQPage: NextPage = () => (
           <Divider />
           <List as="ol" styleType="decimal">
             <ListItem>
-              <Link className={styles.link} href="https://twitter.com/b0rk/status/1162392625057583104?s=19">
-                Gambaran tentang CORS
-              </Link>
-              .
+              <Link href="https://twitter.com/b0rk/status/1162392625057583104?s=19">Gambaran tentang CORS</Link>.
             </ListItem>
           </List>
-        </section>
+        </Box>
       </PageBody>
     </Content>
   </Page>
