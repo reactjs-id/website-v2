@@ -1,47 +1,32 @@
 import * as React from 'react'
 
-import { Stack, Grid, Text } from '@chakra-ui/core'
-import styled from '@emotion/styled'
-
-const Root = styled(Grid)`
-  padding: 36px 24px;
-  color: #888;
-  background-color: #111;
-  a {
-    color: #fff;
-  }
-`
-
-const Inner = styled(Stack)`
-  grid-column: 3/4;
-  text-align: center;
-`
+import { Stack, Grid, Text, Link } from '@chakra-ui/core'
 
 interface FooterProps {
   className?: string
 }
 
 const Footer: React.FC<FooterProps> = ({ className }) => (
-  <Root as="footer" templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr" className={className}>
-    <Inner align="center" justify="center">
+  <Grid as="footer" px="24px" py="36px" color="#888" bg="#111" templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr" className={className}>
+    <Stack align="center" justify="center" gridColumn="3/4" textAlign="center">
       <section>
         <Text margin="0" lineHeight="20px" fontSize="12px">
           &copy; 2020 ReactJS ID.
         </Text>
         <Text margin="0" lineHeight="20px" fontSize="12px">
           Kode sumber situs ini tersedia di{' '}
-          <a href="https://github.com/reactjs-id/reactjs.id" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/reactjs-id/reactjs.id" isExternal color="#fff" rel="noopener noreferrer">
             GitHub
-          </a>
+          </Link>
           . Gambar latar disediakan oleh{' '}
-          <a href="https://www.transparenttextures.com/" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.transparenttextures.com/" isExternal color="#fff" rel="noopener noreferrer">
             Transparent Textures
-          </a>
+          </Link>
           .
         </Text>
       </section>
-    </Inner>
-  </Root>
+    </Stack>
+  </Grid>
 )
 
 export default Footer
