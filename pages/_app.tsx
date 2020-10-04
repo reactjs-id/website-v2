@@ -6,6 +6,7 @@ import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
 
 import AppProvider from '~/components/AppProvider'
+import TopNavigation from '~/components/layout/TopNavigation'
 
 export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
@@ -31,6 +32,7 @@ export default function CustomAppPage({ Component, pageProps, router }: AppProps
       />
 
       <Flex flexDir="column" minH="100vh" justifyContent="space-between">
+        <TopNavigation />
         <Box as="main" flexGrow={1}>
           <Component {...pageProps} />
         </Box>

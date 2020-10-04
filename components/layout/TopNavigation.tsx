@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from 'next/link'
-import Logo from './ui/Logo'
+import Logo from '../ui/Logo'
 import style from './TopNavigation.module.css'
 
 const TopNavigation: React.FC = () => (

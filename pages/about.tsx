@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Page from '~/components/Page'
 import PageHeader from '~/components/PageHeader'
 import PageBody from '~/components/PageBody'
-import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
 import relativeTime from '~/utils/relativeTime'
 
@@ -13,7 +12,6 @@ const lastUpdated = '2018-09-25T19:30:01+07:00'
 
 const AboutPage: NextPage = () => (
   <Page title="About">
-    <Navigation />
     <Content>
       <PageHeader>About us.</PageHeader>
       <PageBody>
