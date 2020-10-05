@@ -6,7 +6,7 @@ import { DefaultSeo } from 'next-seo'
 import AppProvider from '~/components/AppProvider'
 
 export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://new.reactjs.id'
   return (
     <AppProvider>
       <Head>
