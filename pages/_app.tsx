@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 
 import AppProvider from '~/components/AppProvider'
-import TopNavigation from '~/components/Layout/TopNavigation'
 
 export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
@@ -29,7 +28,6 @@ export default function CustomAppPage({ Component, pageProps, router }: AppProps
           site_name: 'ReactJS ID'
         }}
       />
-      <TopNavigation title="ReactJS ID" />
 
       <Component {...pageProps} />
     </AppProvider>
