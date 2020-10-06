@@ -7,6 +7,7 @@ import AppProvider from '~/components/AppProvider'
 
 export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
+
   return (
     <AppProvider>
       <Head>

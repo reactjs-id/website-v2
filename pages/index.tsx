@@ -3,7 +3,6 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 
 import { Page, PageHeader, PageBody } from '~/components/Layout'
-import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
 import relativeTime from '~/utils/relativeTime'
 
@@ -11,7 +10,6 @@ const lastUpdated = '2015-01-25T07:25:15+07:00'
 
 const IndexPage: NextPage = () => (
   <Page>
-    <Navigation />
     <Content>
       <PageHeader title="Hello world." />
       <PageBody>
@@ -30,5 +28,4 @@ const IndexPage: NextPage = () => (
     </Content>
   </Page>
 )
-
 export default IndexPage
