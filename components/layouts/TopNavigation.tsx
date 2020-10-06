@@ -10,6 +10,7 @@ interface TopNavigationProps {
 
 const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => (
   <Grid
+    as="nav"
     templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr"
     bg={customColors.colors.gray08}
     color={customColors.colors.white}
