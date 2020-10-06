@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 
-import AppProvider from '~/components/AppProvider'
+import { AppProvider } from '~/components/helpers'
 
 export default function CustomAppPage({ Component, pageProps, router }: AppProps) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''

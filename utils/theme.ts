@@ -1,4 +1,4 @@
-import { theme } from '@chakra-ui/core'
+import { theme as baseTheme } from '@chakra-ui/core'
 
 const customColors = {
   white: '#fff',
@@ -23,11 +23,13 @@ const fonts = {
   mono: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
 }
 
-export default {
-  ...theme,
+const theme = {
+  ...baseTheme,
   colors: {
-    ...theme.colors,
+    ...baseTheme.colors,
     ...customColors
   },
   fonts
 }
+
+export default theme
