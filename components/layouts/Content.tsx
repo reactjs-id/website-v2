@@ -1,9 +1,8 @@
+import { Box } from '@chakra-ui/core'
 import * as React from 'react'
 
-import styles from './Content.module.css'
-
 const Content: React.FC = ({ children }) => {
-  return <main className={styles.root}>{children}</main>
+  return <Box flex="1 1 auto">{children}</Box>
 }
 
 export default Content

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { List, ListItem, Grid } from '@chakra-ui/core'
-import Logo from '../Ui/Logo'
-import { NextChakraLink } from './NextChakraLink'
+import Logo from '../icons/Logo'
+import { NextChakraLink } from '~/components/helpers'
 import customColors from '~/utils/theme'
 
 interface TopNavigationProps {
