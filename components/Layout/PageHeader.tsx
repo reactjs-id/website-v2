@@ -11,7 +11,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ title, desc, welcomeMessage, isHomePage = false }) => {
   if (isHomePage) {
     return (
-      <Box backgroundColor="gray08" as="header" padding={['3.1em 1em', null, null, '6.1em 3em']}>
+      <Box backgroundColor="gray08" as="header" px={['1em', null, null, '3em']} py={['3.1em', null, null, '6.1em']}>
         <Box maxWidth={['100%', null, null, '50%']}>
           <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" textTransform="uppercase" color="lightBlue" fontSize={20}>
             {welcomeMessage}
