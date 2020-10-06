@@ -2,7 +2,7 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 
-import { Page, PageHeader, PageBody } from '~/components/layout-merge'
+import { Page, PageHeader, PageBody } from '~/components/Layout'
 import Navigation from '~/components/Navigation'
 import Content from '~/components/Content'
 import relativeTime from '~/utils/relativeTime'
