@@ -11,7 +11,12 @@ const lastUpdated = '2015-01-25T07:25:15+07:00'
 const IndexPage: NextPage = () => (
   <Page>
     <Content>
-      <PageHeader title="Hello world." />
+      <PageHeader
+        desc="ReactJS ID adalah komunitas para developer React dan React Native. Kami mengadakan ajang meetup setiap bulannya, dimana para developer React bertukar informasi mengenai React dan ekosistemnya."
+        isHomePage
+        welcomeMessage="selamat datang"
+        title="Komunitas Developer ReactJS Indonesia"
+      />
       <PageBody>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Certe non potest. Negabat igitur ullam esse artem, quae ipsa a se

@@ -10,6 +10,7 @@ const customColors = {
   gray06: '#444',
   gray07: '#333',
   gray08: '#111',
+  lightGray: '#ffffff1a',
   black: '#000',
   lightBlue: '#a8d8fc',
   brand: '#f87b6e'
