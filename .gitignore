@@ -10,6 +10,9 @@ out/
 out_functions/
 out_publish/
 
+# npm lockfile (we use yarn, not npm)
+/package-lock.json
+
 # Logs
 logs
 *.log
