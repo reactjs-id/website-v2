@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-interface LogoProps extends React.SVGAttributes<SVGSVGElement> {
+export interface LogoProps extends React.SVGAttributes<SVGSVGElement> {
   title: string
 }
 

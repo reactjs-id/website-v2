@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { List, ListItem, Grid } from '@chakra-ui/core'
-import Logo from '../icons/Logo'
+import { Logo } from '../icons'
 import { NextChakraLink } from '~/components/helpers'
 import customColors from '~/utils/theme'
 
