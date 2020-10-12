@@ -9,7 +9,7 @@ const CommunityPage: NextPage = () => (
     <Content>
       <PageHeader title="Komunitas" />
       <PageBody>
-        <Text mt={5} mb={6}>
+        <Text mb={6}>
           Bergabunglah dengan komunitas React Indonesia untuk mendapatkan informasi terbaru mengenai React dan ekosistemnya.
         </Text>
 
@@ -21,7 +21,7 @@ const CommunityPage: NextPage = () => (
             Bergabung dengan Meetup group ReactJS ID untuk mendapatkan update mengenai ajang meetup ReactJS ID yang diadakan setiap
             bulannya.
           </Text>
-          <Text as="mark">
+          <Text as="a">
             <Link href="https://www.meetup.com/reactindonesia/">meetup.com/reactindonesia</Link>
           </Text>
         </Box>
@@ -35,7 +35,7 @@ const CommunityPage: NextPage = () => (
             akan mendapatkan berita-berita terkini mengenai ekosistem React, Lowongan Kerja, dan update mengenai ajang meetup setiap
             bulannya.
           </Text>
-          <Text as="mark">
+          <Text as="a">
             <Link href="https://t.me/react_id">t.me/react_id</Link>
           </Text>
         </Box>
@@ -48,7 +48,7 @@ const CommunityPage: NextPage = () => (
             Bergabunglah dengan grup Facebook ReactJS Indonesia, Anda bisa mendapatkan informasi terkini mengenai perkembangan ReactJS,
             lowongan pekerjaan terkait, dan masih banyak lagi informasi bermanfaat lainnya.
           </Text>
-          <Text as="mark">
+          <Text as="a">
             <Link href="https://www.facebook.com/groups/442974152553174/">ReactJS Indonesia</Link>
           </Text>
         </Box>
