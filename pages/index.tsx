@@ -12,7 +12,7 @@ const IndexPage: NextPage = () => (
       <PageHeader
         desc="ReactJS ID adalah komunitas para developer React dan React Native. Kami mengadakan ajang meetup setiap bulannya, dimana para developer React bertukar informasi mengenai React dan ekosistemnya."
         isHomePage
-        welcomeMessage="selamat datang"
+        welcomeMessage="SELAMAT DATANG"
         title="Komunitas Developer ReactJS Indonesia"
       />
 
@@ -20,10 +20,10 @@ const IndexPage: NextPage = () => (
         <Grid gridTemplateColumns="max-content 1fr" columnGap="5em" alignItems="center" py="6em" px="11%">
           <Image display={['hidden', null, null, '']} size="400px" src="/rumah-komunitas/tshirt.jpg" alt="tshirt from rumah komunitas" />
           <Grid>
-            <Heading as="h2" fontSize="xl" fontWeight={300} textTransform="uppercase">
-              kabar gembira!
+            <Heading as="h2" fontSize="md" fontWeight={300}>
+              KABAR GEMBIRA!
             </Heading>
-            <Heading as="h3" fontSize="2.86rem" fontWeight={600}>
+            <Heading as="h3" fontSize="4xl" fontWeight={600}>
               Merchandise Resmi ReactJS Indonesia
             </Heading>
             <Text as="p" my="18px">
@@ -39,8 +39,8 @@ const IndexPage: NextPage = () => (
 
       <Box backgroundColor="lightBlue" paddingX="8.5em" paddingY="6em">
         <Grid gap="2px" justifyContent="center" gridAutoFlow="row" textAlign="center">
-          <Heading as="h2" color="gray08" fontSize="20px" lineHeight="28px" fontWeight={300} textTransform="uppercase">
-            ingin belajar react?
+          <Heading as="h2" color="gray08" fontSize="lg" fontWeight={300}>
+            INGIN BELAJAR REACT?
           </Heading>
           <Heading as="h3" fontSize="48px" lineHeight="56px">
             Materi Pembelajaran
@@ -68,10 +68,10 @@ const IndexPage: NextPage = () => (
                 >
                   <Link h="100%" href={resource.url} isExternal _hover={{ outline: 'none' }}>
                     <Flex flexDirection="column" alignItems="flex-start" h="inherit">
-                      <Heading color="astronautBlue" as="h4" mb="4px" fontSize="1em" fontWeight={300} textTransform="uppercase">
+                      <Heading color="astronautBlue" as="h4" mb="4px" fontSize="md" fontWeight={300} textTransform="uppercase">
                         {resource.type}
                       </Heading>
-                      <Heading textAlign="left" color="gray08" as="h5" fontSize="24px" fontWeight={600}>
+                      <Heading textAlign="left" color="gray08" as="h5" fontSize="2xl" fontWeight={600}>
                         {resource.title}
                       </Heading>
                       <Text textAlign="left" as="p" mt="0.5em" mb="1.3em">
@@ -85,7 +85,7 @@ const IndexPage: NextPage = () => (
                         backgroundColor="astronautBlue"
                         color="white"
                       >
-                        Kunjungin Situs
+                        Kunjungi Situs
                       </LinkButton>
                     </Flex>
                   </Link>
