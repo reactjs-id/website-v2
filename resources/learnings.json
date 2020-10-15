@@ -1,0 +1,59 @@
+[
+  {
+    "type": "Dokumentasi",
+    "title": "Dokumentasi React (EN)",
+    "description": "Dokumentasi React merupakan sumber daya React terlengkap. Anda dapat menemukan segalanya, mulai dari referensi API, tutorial praktis cara mengaplikasikan React pada sebuah aplikasi, hingga update terbaru mengenai React.",
+    "url": "https://reactjs.org"
+  },
+  {
+    "type": "Dokumentasi",
+    "title": "Dokumentasi React (ID)",
+    "description": "Dokumentasi React juga tersedia dalam Bahasa Indonesia. Anda juga dapat berkontribusi menerjemahkan dokumentasi React melalui GitHub reactjs/id.reactjs.org.",
+    "url": "https://id.reactjs.org",
+    "featured": true
+  },
+  {
+    "type": "Kursus Video",
+    "title": "The Beginner's Guide to React",
+    "description": "Kursus video gratis dari Egghead ini dibawakan oleh Kent C. Dodds. Anda akan belajar cara kerja React secara internal, apa itu JSX dan bagaimana cara kerjanya, serta cara menggunakan React untuk berbagai macam use-case.",
+    "url": "https://egghead.io/courses/the-beginner-s-guide-to-react"
+  },
+  {
+    "type": "Modul Pembelajaran",
+    "title": "Materi Bimbingan Penggunaan React",
+    "description": "Penjelasan detail mengenai penggunaan React mulai dari konsep dasar, disertai contoh kode dan penjelasan. Tiap materi dibagi menjadi beberapa bagian sehingga lebih mudah untuk diikuti satu per satu.",
+    "url": "https://github.com/arisetyo/belajar-react",
+    "featured": true
+  },
+  {
+    "type": "Kursus Video",
+    "title": "Belajar ReactJS Untuk Pemula",
+    "description": "Kursus video lengkap dalam bahasa Indonesia untuk mempelajari React, mulai dari pengenalan konsep-konsep dasar hingga men-deploy aplikasi React Anda di berbagai macam provider hosting.",
+    "url": "https://sekolahkoding.com/kelas/belajar-reactjs-untuk-pemula"
+  },
+  {
+    "type": "Kursus Video",
+    "title": "KODE.id - Membuat Single Page Application dengan React",
+    "description": "Kursus ini dibawakan oleh Riza Fahmi. Membahas semua hal fundamental tentang React. Mulai dari apa dan kenapa menggunakan React, komponen, aliran data, styling component, membaca data hingga membuat aplikasi Single Page App dengan React dan beberapa library penting.",
+    "url": "https://kode.id/kelas/fundamental-react/",
+    "featured": true
+  },
+  {
+    "type": "Kursus Video",
+    "title": "Egghead - Getting Started with Redux",
+    "description": "Kursus ini dibawakan oleh Dan Abramov, pencipta Redux. Membahas konsep dasar Redux sehingga kita dapat mulai menggunakannya untuk menyederhanakan aplikasi React yang kita buat.",
+    "url": "https://egghead.io/courses/getting-started-with-redux"
+  },
+  {
+    "type": "Kursus Video",
+    "title": "Egghead - Building React Applications with Idiomatic Redux",
+    "description": "Kursus ini dibawakan oleh Dan Abramov, pencipta Redux. Membahas berbagai teknik praktis untuk aplikasi yang menggunakan React dan Redux.",
+    "url": "https://egghead.io/courses/building-react-applications-with-idiomatic-redux"
+  },
+  {
+    "type": "Kursus Video",
+    "title": "LampungDev - Dasar Dasar Reactjs + Studi Kasus",
+    "description": "Kursus ini dibawakan oleh M Danil Rafiqi. Membahas mengenai dasar dasar reactjs dan studi kasus membuat Dashboard Admin menggunakan React Antd",
+    "url": "https://www.youtube.com/playlist?list=PLp6BJq2fT_g91yCNCWi_bIe-ng7S7rt6V"
+  }
+]

@@ -1,5 +1,7 @@
 import * as React from 'react'
-import { Box, Link, Text, Heading, Icon, Image } from '@chakra-ui/core'
+import { Box, Text, Heading, Image } from '@chakra-ui/core'
+
+import { LinkButton } from '~/components/ui'
 
 interface PageHeaderProps {
   title: string
@@ -13,7 +15,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, desc, welcomeMessage, is
     return (
       <Box backgroundColor="gray08" as="header" px={['1em', null, null, '3em']} py={['3.1em', null, null, '6.1em']}>
         <Box maxWidth={['100%', null, null, '50%']}>
-          <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" textTransform="uppercase" color="lightBlue" fontSize={20}>
+          <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" color="lightBlue" fontSize={20}>
             {welcomeMessage}
           </Heading>
           <Heading as="h3" fontFamily="body" fontWeight="500" color="white" fontSize={48}>
@@ -22,25 +24,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, desc, welcomeMessage, is
           <Text as="p" my="20px" color="white" fontFamily="body">
             {desc}
           </Text>
-          <Link
-            href="https://www.meetup.com/reactindonesia/"
-            isExternal
-            display="grid"
-            color="white"
-            ml="-16px"
-            padding="0 16px"
-            height="40px"
-            _hover={{ bg: 'lightGray' }}
-            gridAutoFlow="column"
-            gridAutoColumns="max-content"
-            justifyContent="center"
-            alignItems="center"
-            width="max-content"
-            borderRadius="4px"
-          >
-            <Text>Bergabung</Text>
-            <Icon name="arrow-forward" size="21px" ml="8px" />
-          </Link>
+          <LinkButton href="https://www.meetup.com/reactindonesia/" isExternal ml="-16px" color="white" _hover={{ bg: 'lightGray' }}>
+            Bergabung
+          </LinkButton>
         </Box>
       </Box>
     )
