@@ -12,6 +12,7 @@ const customColors = {
   gray08: '#111',
   lightGray: '#ffffff1a',
   black: '#000',
+  blue: '#254763',
   lightBlue: '#a8d8fc',
   brand: '#f87b6e'
 }
