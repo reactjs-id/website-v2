@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Box, Text, PseudoBox } from '@chakra-ui/core'
+import { Box, Text, PseudoBox, Link } from '@chakra-ui/core'
 
 import { ArrowRightIcon } from '../ui'
 
@@ -12,7 +12,7 @@ interface LearningCardProps {
 
 const LearningCard: React.FC<LearningCardProps> = ({ heading, title, href, desc }) => {
   return (
-    <PseudoBox
+    <Link
       as="a"
       href={href}
       minH="320px"
@@ -45,7 +45,7 @@ const LearningCard: React.FC<LearningCardProps> = ({ heading, title, href, desc 
         </Text>
       </Box>
       <Box as="footer" margin={0} padding="16px 24px">
-        <PseudoBox
+        <Link
           as="button"
           href={href}
           backgroundColor="darkBlue"
@@ -61,9 +61,9 @@ const LearningCard: React.FC<LearningCardProps> = ({ heading, title, href, desc 
           <PseudoBox as="span" display="block" width="16px" height="16px" ml="8px">
             <ArrowRightIcon />
           </PseudoBox>
-        </PseudoBox>
+        </Link>
       </Box>
-    </PseudoBox>
+    </Link>
   )
 }
 
