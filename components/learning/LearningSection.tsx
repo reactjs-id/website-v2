@@ -9,7 +9,7 @@ const theRest = learning.filter(item => !item.featured)
 
 const LearningSection: React.FC = () => {
   return (
-    <Box as="section" py="96px" maxW="1024px">
+    <Box as="section" py="96px">
       <Heading fontFamily="body" fontWeight="300" mb="8px" as="h2" textTransform="uppercase" fontSize={20} textAlign="center">
         Ingin Belajar React?
       </Heading>
@@ -20,7 +20,7 @@ const LearningSection: React.FC = () => {
         Beberapa konsep React memang terlihat janggal, tapi diluar itu React sangat mudah untuk dipelajari dan dipahami, baik mereka yang
         sudah mahir dalam JavaScript modern ataupun yang baru saja memulai. Cobalah memulai dari salah satu materi di bawah.
       </Text>
-      <Grid templateColumns="repeat(3, 1fr)" gap="24px" mt="36px">
+      <Grid templateColumns="repeat(auto-fit, minmax(calc(296px), 1fr))" gap="24px" mt="36px">
         {featuredMaterials.map(item => (
           <LearningCard heading={item.type} title={item.title} desc={item.description} href={item.url} key={item.title} />
         ))}
