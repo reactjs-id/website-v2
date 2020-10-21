@@ -48,7 +48,7 @@ const LearningCard: React.FC<LearningCardProps> = ({ heading, title, href, desc 
         <PseudoBox
           as="button"
           href={href}
-          backgroundColor="blue"
+          backgroundColor="darkBlue"
           color="white"
           p="0 16px"
           height="40px"

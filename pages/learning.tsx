@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { NextPage } from 'next'
 
-import { Content, Page, PageHeader, PageBody } from '~/components/layouts'
+import { Content, Page, PageBody } from '~/components/layouts'
 import LearningSection from '../components/learning/LearningSection'
 
 const LearningPage: NextPage = () => (
