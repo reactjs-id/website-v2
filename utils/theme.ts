@@ -14,13 +14,17 @@ const customColors = {
   black: '#000',
   darkBlue: '#254763',
   lightBlue: '#a8d8fc',
-  brand: '#f87b6e'
+  brand: '#f87b6e',
+  astronautBlue: '#254763',
+  tangaroa: '#091219'
 }
 
 const fonts = {
   body:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
-  heading: 'Georgia, "Times New Roman", Times, serif',
+  get heading() {
+    return this.body
+  },
   mono: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
 }
 
