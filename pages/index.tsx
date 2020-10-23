@@ -1,8 +1,9 @@
 import * as React from 'react'
 import { NextPage } from 'next'
-import { Box, PseudoBox, Flex, Link, Heading, Text, Grid, Image } from '@chakra-ui/core'
+import { Box, Flex, Heading, Text, Grid, Image } from '@chakra-ui/core'
 
 import { Content, Page, PageHeader } from '~/components/layouts'
+import LearningCard from '~/components/learning/LearningCard'
 import { LinkButton } from '~/components/ui'
 import learningResources from '~/resources/learnings.json'
 
@@ -53,47 +54,17 @@ const IndexPage: NextPage = () => (
             {learningResources
               .filter(resource => resource.featured)
               .map((resource, i) => (
-                <PseudoBox
+                <LearningCard
+                  heading={resource.type}
+                  title={resource.title}
+                  desc={resource.description}
+                  href={resource.url}
                   key={i.toString()}
-                  role="group"
-                  backgroundColor="white"
-                  border="none"
-                  boxShadow="rgba(0, 0, 0, 0.25) 0px 2px 4px"
-                  minHeight="320px"
-                  borderRadius="8px"
-                  py="1em"
-                  px="1.5em"
-                  cursor="pointer"
-                  _hover={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 6px 8px' }}
-                >
-                  <Link h="100%" href={resource.url} isExternal _hover={{ outline: 'none' }}>
-                    <Flex flexDirection="column" alignItems="flex-start" h="inherit">
-                      <Heading color="astronautBlue" as="h4" mb="4px" fontSize="md" fontWeight={300} textTransform="uppercase">
-                        {resource.type}
-                      </Heading>
-                      <Heading textAlign="left" color="gray08" as="h5" fontSize="2xl" fontWeight={600}>
-                        {resource.title}
-                      </Heading>
-                      <Text textAlign="left" as="p" mt="0.5em" mb="1.3em">
-                        {resource.description}
-                      </Text>
-                      <LinkButton
-                        _hover={undefined}
-                        _groupHover={{ backgroundColor: 'tangaroa' }}
-                        as="span"
-                        mt="auto"
-                        backgroundColor="astronautBlue"
-                        color="white"
-                      >
-                        Kunjungi Situs
-                      </LinkButton>
-                    </Flex>
-                  </Link>
-                </PseudoBox>
+                />
               ))}
           </Grid>
           <Flex justifyContent="center" mt="4em">
-            <LinkButton _hover={{ backgroundColor: 'tangaroa' }} mt="auto" backgroundColor="astronautBlue" color="white">
+            <LinkButton href="/learning" _hover={{ backgroundColor: 'tangaroa' }} mt="auto" backgroundColor="astronautBlue" color="white">
               Lihat Selengkapnya
             </LinkButton>
           </Flex>

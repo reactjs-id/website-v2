@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { Box, Text, PseudoBox, Link } from '@chakra-ui/core'
+import { PseudoBox, Flex, Link, Heading, Text } from '@chakra-ui/core'
 
-import { ArrowRightIcon } from '../ui'
+import { LinkButton } from '~/components/ui'
 
 interface LearningCardProps {
   title?: string
@@ -12,58 +12,42 @@ interface LearningCardProps {
 
 const LearningCard: React.FC<LearningCardProps> = ({ heading, title, href, desc }) => {
   return (
-    <Link
-      as="a"
-      href={href}
-      minH="320px"
-      display="flex"
-      flexDir="column"
-      height="100%"
+    <PseudoBox
+      role="group"
       backgroundColor="white"
-      color="gray08"
+      border="none"
+      boxShadow="rgba(0, 0, 0, 0.25) 0px 2px 4px"
+      minHeight="320px"
       borderRadius="8px"
-      shadow="0px 2px 4px rgba(0, 0, 0, 0.25)"
-      transition="box-shadow 0.3s ease"
-      _hover={{ color: 'gray', textDecoration: 'none', shadow: '0px 6px 8px rgba(0, 0, 0, 0.25)' }}
-      _focus={{ color: 'gray', textDecoration: 'none', shadow: '0px 6px 8px rgba(0, 0, 0, 0.25)' }}
-      _active={{ color: 'gray', textDecoration: 'none' }}
-      _visited={{ color: 'gray', textDecoration: 'none' }}
+      py="1em"
+      px="1.5em"
+      cursor="pointer"
+      _hover={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 6px 8px' }}
     >
-      <Box as="header" margin={0} padding="16px 24px 0">
-        {heading && (
-          <Text as="h4" mb="4px" fontSize="16px" lineHeight="24px" fontWeight="300" color="blue" textTransform="uppercase">
+      <Link h="100%" href={href} isExternal _hover={{ outline: 'none' }}>
+        <Flex flexDirection="column" alignItems="flex-start" h="inherit">
+          <Heading color="astronautBlue" as="h4" mb="4px" fontSize="md" fontWeight={300} textTransform="uppercase">
             {heading}
+          </Heading>
+          <Heading textAlign="left" color="gray08" as="h5" fontSize="2xl" fontWeight={600}>
+            {title}
+          </Heading>
+          <Text textAlign="left" as="p" mt="0.5em" mb="1.3em">
+            {desc}
           </Text>
-        )}
-        <Text as="h5" m={0} fontSize="20px" lineHeight="28px" fontWeight="600">
-          {title}
-        </Text>
-      </Box>
-      <Box as="section" margin={0} padding="16px 24px 0" flex="1 1 auto">
-        <Text as="p" mt="20px" fontSize="16px" lineHeight="24px">
-          {desc}
-        </Text>
-      </Box>
-      <Box as="footer" margin={0} padding="16px 24px">
-        <Link
-          as="button"
-          href={href}
-          backgroundColor="darkBlue"
-          color="white"
-          p="0 16px"
-          height="40px"
-          borderRadius="4px"
-          display="flex"
-          flexDir="row"
-          alignItems="center"
-        >
-          <span>Kunjungi Situs</span>
-          <PseudoBox as="span" display="block" width="16px" height="16px" ml="8px">
-            <ArrowRightIcon />
-          </PseudoBox>
-        </Link>
-      </Box>
-    </Link>
+          <LinkButton
+            _hover={undefined}
+            _groupHover={{ backgroundColor: 'tangaroa' }}
+            as="span"
+            mt="auto"
+            backgroundColor="astronautBlue"
+            color="white"
+          >
+            Kunjungi Situs
+          </LinkButton>
+        </Flex>
+      </Link>
+    </PseudoBox>
   )
 }
 
