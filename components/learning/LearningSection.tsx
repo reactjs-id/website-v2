@@ -2,10 +2,10 @@ import * as React from 'react'
 import { Box, Grid, Heading, Text } from '@chakra-ui/core'
 
 import LearningCard from './LearningCard'
-import learning from '../../content/learning.json'
+import learningResources from '~/resources/learnings.json'
 
-const featuredMaterials = learning.filter(item => item.featured)
-const theRest = learning.filter(item => !item.featured)
+const featuredMaterials = learningResources.filter(item => item.featured)
+const theRest = learningResources.filter(item => !item.featured)
 
 const LearningSection: React.FC = () => {
   return (
