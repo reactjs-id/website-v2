@@ -2,26 +2,25 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import { Box, PseudoBox, Flex, Link, Heading, Text, Grid, Image } from '@chakra-ui/core'
 
-import { Content, Page, PageHeader } from '~/components/layouts'
+import { Content, Page } from '~/components/layouts'
+import { HomePageHeader } from '~/components/home'
 import { LinkButton } from '~/components/ui'
 import learningResources from '~/resources/learnings.json'
 
 const IndexPage: NextPage = () => (
   <Page>
     <Content>
-      <PageHeader
-        desc="ReactJS ID adalah komunitas para developer React dan React Native. Kami mengadakan ajang meetup setiap bulannya, dimana para developer React bertukar informasi mengenai React dan ekosistemnya."
-        isHomePage
-        welcomeMessage="SELAMAT DATANG"
+      <HomePageHeader
+        welcomeMessage="Selamat Datang"
         title="Komunitas Developer ReactJS Indonesia"
+        desc="ReactJS ID adalah komunitas para developer React dan React Native. Kami mengadakan ajang meetup setiap bulannya, dimana para developer React bertukar informasi mengenai React dan ekosistemnya."
       />
-
       <Box backgroundColor="#f2f2f2">
-        <Grid gridTemplateColumns="max-content 1fr" columnGap="5em" alignItems="center" py="6em" px="11%">
+        <Grid gridTemplateColumns="max-content 1fr" columnGap="xl" alignItems="center" py="6em" px="11%">
           <Image display={['hidden', null, null, '']} size="400px" src="/rumah-komunitas/tshirt.jpg" alt="tshirt from rumah komunitas" />
           <Grid>
-            <Heading as="h2" fontSize="md" fontWeight={300}>
-              KABAR GEMBIRA!
+            <Heading as="h2" fontSize="md" textTransform="uppercase" fontWeight={300}>
+              Kabar Gembira
             </Heading>
             <Heading as="h3" fontSize="4xl" fontWeight={600}>
               Merchandise Resmi ReactJS Indonesia
@@ -39,8 +38,8 @@ const IndexPage: NextPage = () => (
 
       <Box backgroundColor="lightBlue" paddingX="8.5em" paddingY="6em">
         <Grid gap="2px" justifyContent="center" gridAutoFlow="row" textAlign="center">
-          <Heading as="h2" color="gray08" fontSize="lg" fontWeight={300}>
-            INGIN BELAJAR REACT?
+          <Heading as="h2" color="gray08" fontSize="lg" textTransform="uppercase" fontWeight={300}>
+            Ingin Belajar React?
           </Heading>
           <Heading as="h3" fontSize="48px" lineHeight="56px">
             Materi Pembelajaran
