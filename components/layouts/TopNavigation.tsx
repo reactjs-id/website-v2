@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { List, ListItem, Grid } from '@chakra-ui/core'
-import { Logo } from '../ui'
 import { NextChakraLink } from '~/components/helpers'
 import theme from '~/utils/theme'
+import { Logo } from '../ui'
 
 interface TopNavigationProps {
   title: string
@@ -11,9 +11,9 @@ interface TopNavigationProps {
 const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => (
   <Grid
     as="nav"
-    templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr"
-    bg={theme.colors.gray08}
-    color={theme.colors.white}
+    templateColumns={`1fr 1fr minmax(auto, ${theme.sizes['6xl']}) 1fr 1fr`}
+    backgroundColor="gray.900"
+    color="white"
     h={80}
     zIndex={50}
   >

@@ -6,7 +6,7 @@ const LinkButton: React.FC<LinkProps> = ({ children, ...props }) => (
     display="grid"
     padding="0 16px"
     height="40px"
-    _hover={{ bg: '#0000001a' }}
+    _hover={{ backgroundColor: '#0000001a' }}
     gridAutoFlow="column"
     gridAutoColumns="max-content"
     justifyContent="center"

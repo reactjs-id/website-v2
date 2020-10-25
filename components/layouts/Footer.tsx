@@ -7,7 +7,15 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ className }) => (
-  <Grid as="footer" px="24px" py="36px" color="#888" bg="#111" templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr" className={className}>
+  <Grid
+    as="footer"
+    px="24px"
+    py="36px"
+    color="gray.300"
+    bg="gray.900"
+    templateColumns="1fr 1fr minmax(auto, 1140px) 1fr 1fr"
+    className={className}
+  >
     <Stack align="center" justify="center" gridColumn="3/4" textAlign="center">
       <section>
         <Text margin="0" lineHeight="20px" fontSize="12px">
