@@ -13,6 +13,7 @@ const customColors = {
   lightGray: '#ffffff1a',
   black: '#000',
   lightBlue: '#a8d8fc',
+  oldBlue: '#a8d8fc80',
   brand: '#f87b6e',
   astronautBlue: '#254763',
   tangaroa: '#091219'
