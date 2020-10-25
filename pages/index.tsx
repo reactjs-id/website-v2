@@ -17,20 +17,20 @@ const IndexPage: NextPage = () => (
       />
       <Box backgroundColor="#f2f2f2" px={[4, null, null, 8]} py={['3.1em', null, null, '6.1em']}>
         <Box mx="auto" maxWidth="6xl">
-          <Grid gridTemplateColumns="max-content auto 1fr" columnGap="xl" alignItems="center">
+          <Grid gridTemplateColumns={['1fr', null, null, 'max-content 1fr']} gridGap={8} alignItems="center">
             <Image
-              display={['hidden', null, null, '']}
+              display={['none', null, null, 'block']}
               gridColumn={1}
-              size="400px"
+              size={400}
               src="/rumah-komunitas/tshirt.jpg"
               alt="tshirt from rumah komunitas"
             />
-            <Grid gridColumn={3}>
-              <Heading as="h2" fontSize="md" textTransform="uppercase" fontWeight={300}>
-                Kabar Gembira
+            <Grid gridColumn={[1, null, null, 2]}>
+              <Heading as="h2" fontSize="lg" textTransform="uppercase" fontWeight={300}>
+                Kabar Gembira!
               </Heading>
-              <Heading as="h3" fontSize="4xl" fontWeight={600}>
-                Merchandise Resmi ReactJS Indonesia
+              <Heading as="h3" fontSize="5xl" fontWeight={600}>
+                Merchandise Resmi ReactJS&nbsp;Indonesia
               </Heading>
               <Text as="p" my="18px">
                 Merchandise resmi ReactJS Indonesia kini tersedia berkat kerjasama oleh Rumah Komunitas. Klik link di bawah untuk

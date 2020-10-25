@@ -21,7 +21,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
       px={[4, null, null, 8]}
     >
       <Box position="relative" zIndex={2} mx="auto" maxWidth="3xl">
-        <Heading as="h1" size="2xl" color="white">
+        <Heading as="h1" fontSize="5xl" fontWeight={600} color="white">
           {title}
         </Heading>
       </Box>
