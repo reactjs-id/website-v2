@@ -21,7 +21,7 @@ const HomePageHeader: React.FC<HomePageHeaderProps> = ({ welcomeMessage, title, 
     >
       <Box mx="auto" maxWidth="6xl">
         <Box maxWidth={['100%', null, null, '50%']}>
-          <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" color="lightBlue" textTransform="uppercase" fontSize={20}>
+          <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" color="reactBlue.200" textTransform="uppercase" fontSize={20}>
             {welcomeMessage}
           </Heading>
           <Heading as="h3" fontFamily="body" fontWeight="500" color="white" fontSize={48}>
@@ -30,7 +30,13 @@ const HomePageHeader: React.FC<HomePageHeaderProps> = ({ welcomeMessage, title, 
           <Text as="p" my="20px" color="white" fontFamily="body">
             {desc}
           </Text>
-          <LinkButton href="https://www.meetup.com/reactindonesia/" isExternal ml="-16px" color="white" _hover={{ bg: 'lightGray' }}>
+          <LinkButton
+            href="https://www.meetup.com/reactindonesia/"
+            isExternal
+            ml="-16px"
+            color="white"
+            _hover={{ backgroundColor: '#ffffff1a' }}
+          >
             Bergabung
           </LinkButton>
         </Box>
