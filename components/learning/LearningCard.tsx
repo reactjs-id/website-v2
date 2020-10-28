@@ -37,10 +37,10 @@ const LearningCard: React.FC<LearningCardProps> = ({ heading, title, href, desc 
           </Text>
           <LinkButton
             _hover={undefined}
-            _groupHover={{ backgroundColor: 'tangaroa' }}
+            _groupHover={{ backgroundColor: 'reactBlue.900' }}
             as="span"
             mt="auto"
-            backgroundColor="astronautBlue"
+            backgroundColor="reactBlue.800"
             color="white"
           >
             Kunjungi Situs

@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
+    "dev:watch": "next-remote-watch ./contents",
     "build": "next build",
     "postbuild": "next-sitemap && next-on-netlify",
     "start": "next start",
@@ -26,9 +27,12 @@
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
     "emotion-theming": "10.0.27",
+    "gray-matter": "^4.0.2",
     "modern-normalize": "^0.7.0",
     "next": "^9.5.2",
+    "next-mdx-remote": "^1.0.0",
     "next-on-netlify": "2.4.0",
+    "next-remote-watch": "^0.2.0",
     "next-seo": "4.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
