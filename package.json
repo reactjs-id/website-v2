@@ -28,6 +28,7 @@
     "emotion-server": "^10.0.27",
     "emotion-theming": "10.0.27",
     "gray-matter": "^4.0.2",
+    "htmr": "^0.9.2",
     "modern-normalize": "^0.7.0",
     "next": "^9.5.2",
     "next-mdx-remote": "^1.0.0",
@@ -35,7 +36,9 @@
     "next-remote-watch": "^0.2.0",
     "next-seo": "4.10.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   },
   "devDependencies": {
     "@types/node": "^14.11.2",

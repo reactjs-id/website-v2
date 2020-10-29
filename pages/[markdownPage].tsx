@@ -2,34 +2,24 @@ import * as React from 'react'
 import fs from 'fs'
 import { GetStaticProps } from 'next'
 import matter from 'gray-matter'
-import hydrate from 'next-mdx-remote/hydrate'
-import renderToString, { ComponentsType } from 'next-mdx-remote/render-to-string'
 import path from 'path'
-import dynamic from 'next/dynamic'
-import { Text } from '@chakra-ui/core'
+import remark from 'remark'
+import remarkHTML from 'remark-html'
+import htmr from 'htmr'
 
 import { Content, Page, PageBody, PageHeader } from '~/components/layouts'
 import { postFilePaths, POSTS_PATH } from '~/utils/mdxUtils'
+import htmrTransform from '~/utils/htmrTransform'
 
 type PropsType = {
-  source: any // because its compiled resource
+  source: string
   frontMatter: {
     title: string
   }
 }
 
-// Custom components/renderers to pass to MDX.
-// Since the MDX files aren't loaded by webpack, they have no knowledge of how
-// to handle import statements. Instead, you must include components in scope
-// here.
-const components = {
-  p: ({ children }) => <Text mb={6}>{children}</Text>,
-  a: dynamic(() => import('~/components/layouts/markdown/Link')),
-  h2: dynamic(() => import('~/components/layouts/markdown/Heading'))
-} as ComponentsType
-
 export default function PostPage({ source, frontMatter }: PropsType) {
-  const content = hydrate(source, { components })
+  const content = htmr(source, { transform: htmrTransform })
 
   return (
     <Page title={frontMatter.title}>
@@ -44,14 +34,14 @@ export default function PostPage({ source, frontMatter }: PropsType) {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postFilePath = path.join(POSTS_PATH, `${params?.markdownPage}.mdx`)
   const source = fs.readFileSync(postFilePath)
-
   const { content, data } = matter(source)
 
-  const mdxSource = await renderToString(content, { components, scope: data })
+  const remarkedMarkdown = await remark().use(remarkHTML).process(content)
+  const stringRemarkedMarkdown = remarkedMarkdown.toString()
 
   return {
     props: {
-      source: mdxSource,
+      source: stringRemarkedMarkdown,
       frontMatter: data
     }
   }
