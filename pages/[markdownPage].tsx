@@ -3,14 +3,13 @@ import fs from 'fs'
 import { GetStaticProps } from 'next'
 import matter from 'gray-matter'
 import path from 'path'
-import { Text } from '@chakra-ui/core'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
 import htmr from 'htmr'
 
 import { Content, Page, PageBody, PageHeader } from '~/components/layouts'
 import { postFilePaths, POSTS_PATH } from '~/utils/mdxUtils'
-import { Link as MarkdownLink, Heading as MarkdownHeading } from '~/components/layouts/markdown'
+import htmrTransform from '~/utils/htmrTransform'
 
 type PropsType = {
   source: string
@@ -19,18 +18,8 @@ type PropsType = {
   }
 }
 
-// Custom components/renderers to pass to MDX.
-// Since the MDX files aren't loaded by webpack, they have no knowledge of how
-// to handle import statements. Instead, you must include components in scope
-// here.
-const transform = {
-  p: ({ children }) => <Text mb={6}>{children}</Text>,
-  a: MarkdownLink,
-  h2: MarkdownHeading
-} as ComponentsType
-
 export default function PostPage({ source, frontMatter }: PropsType) {
-  const content = htmr(source, { transform })
+  const content = htmr(source, { transform: htmrTransform })
 
   return (
     <Page title={frontMatter.title}>
