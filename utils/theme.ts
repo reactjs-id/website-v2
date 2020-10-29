@@ -3,15 +3,6 @@ import { theme as baseTheme } from '@chakra-ui/core'
 const customColors = {
   white: '#fff',
   black: '#000',
-  gray01: '#fafafa',
-  gray02: '#efefef',
-  gray03: '#999',
-  gray04: '#888',
-  gray05: '#666',
-  gray06: '#444',
-  gray07: '#333',
-  gray08: '#111',
-  lightBlue: '#a8d8fc',
   gray: {
     50: '#f2f2f3',
     100: '#d7d9da',
