@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Text } from '@chakra-ui/core'
+import { Code, Text } from '@chakra-ui/core'
 
 import { Link, H1, H2, H3, H4, H5, H6, UL, LI, OL } from '~/components/layouts/markdown'
 
@@ -22,7 +22,8 @@ const htmrTransform = {
   h6: H6,
   ul: UL,
   ol: OL,
-  li: LI
+  li: LI,
+  code: Code
 } as ComponentsType
 
 export default htmrTransform
