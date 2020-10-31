@@ -31,7 +31,7 @@ const IndexPage: NextPage = () => (
                 Kabar Gembira!
               </Heading>
               <Heading as="h3" fontSize="5xl" fontWeight={600}>
-                Merchandise Resmi ReactJS&nbsp;Indonesia
+                Merchandise Resmi ReactJS Indonesia
               </Heading>
               <Text as="p" my="18px">
                 Merchandise resmi ReactJS Indonesia kini tersedia berkat kerjasama oleh Rumah Komunitas. Klik link di bawah untuk
