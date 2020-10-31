@@ -1,8 +1,15 @@
 import * as React from 'react'
-import { Link as BaseLink } from '@chakra-ui/core'
+import { Link as BaseLink, LinkProps } from '@chakra-ui/core'
 
-const Link: React.FC<{ href: string }> = ({ children, href }) => (
-  <BaseLink href={href} isExternal backgroundColor="#a8d8fc80">
+const Link: React.FC<LinkProps> = ({ children, href }) => (
+  <BaseLink
+    href={href}
+    isExternal
+    borderBottom="1px solid"
+    borderBottomColor="gray.400"
+    backgroundColor="#a8d8fc80"
+    _hover={{ backgroundColor: '#a8d8fc', borderBottomColor: 'gray.800' }}
+  >
     {children}
   </BaseLink>
 )
