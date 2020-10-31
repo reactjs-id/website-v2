@@ -28,7 +28,7 @@ const LearningPage: NextPage<LearningPageProps> = ({ featuredMaterials, theRest 
             Materi Pembelajaran
           </Heading>
           <Text as="h2" mt="20px" mb="16px" fontSize={16} textAlign="center">
-            Beberapa konsep React memang terlihat janggal, tapi diluar itu React sangat mudah untuk dipelajari dan dipahami, baik mereka
+            Beberapa konsep React memang terlihat janggal, tapi di luar itu React sangat mudah untuk dipelajari dan dipahami, baik mereka
             yang sudah mahir dalam JavaScript modern ataupun yang baru saja memulai. Cobalah memulai dari salah satu materi di bawah.
           </Text>
           <Grid templateColumns="repeat(auto-fit, minmax(calc(296px), 1fr))" gap="24px" mt="36px">
