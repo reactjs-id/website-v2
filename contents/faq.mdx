@@ -1,0 +1,43 @@
+---
+title: 'FAQ'
+---
+
+Halaman ini berisi pertanyaan yang sering ditanyakan pada grup Telegram kami. Ingin menambahkan pertanyaan baru? Submit di [repositori GitHub ini](https://github.com/reactjs-id/reactjs.id).
+
+### Saya masih _newbie_. Boleh minta e-book untuk belajar React? Adakah tutorial React berbahasa Indonesia?
+
+- Kami menyarankan untuk membaca dokumentasi resmi React yang bisa kalian temui [di situs resmi React](https://reactjs.org/).
+- Jika kalian merasa dokumentasi React masih belum memadai, atau kalian tipe yang lebih ingin belajar melalui video, maka Anda bisa menonton video mas **prawito hudoro** yang bisa kalian tonton di [channel YouTube-nya](https://www.youtube.com/watch?v=5kHyviqjhCk&list=PLU4DS8KR-LJ03qEsHn9zV4qdhcWtusBqb).
+
+### JavaScript dulu atau React dulu?
+
+JavaScript dulu, karena React dibuat menggunakan JavaScript, sehingga jika sudah paham konsep JavaScript maka untuk memahami React tidak akan terlalu susah. Lebih dari itu, mempelajari JavaScript juga dapat membantu pemahaman logika kalian dalam menyelesaikan masalah.
+
+### Lebih baik React, Vue atau Angular?
+
+Semua itu tergantung. Pada dasarnya, lebih baik untuk belajar logika pemrograman terlebih dahulu ketimbang harus belajar framework, karena framework tidak lekang oleh waktu. Siapa yang menjamin 3-5 tahun dari sekarang framework atau library di atas masih tetap eksis?
+
+### Bisakah menggunakan Laravel dengan React?
+
+Tentu bisa. Pada dasarnya, hasil _output_ React hanyalah _file_ HTML statis yang dapat diunggah di _host_ manapun. Untuk panduan menggunakan Laravel dengan React, baca [dokumentasi Laravel](https://laravel.com/docs/6.x/frontend#using-react) berikut ini.
+
+### Apakah Google (SEO) tidak bisa membaca SPA (JS, React, Vue,dll) ?
+
+Tentu bisa. Mau itu Multiple Page Application (MPA) / Single Page Application (SPA), selama kita (manusia) bisa membaca,
+maka bot search engine juga bisa membacanya, karena GoogleBot juga pakai Chrome yang kita pakai. [~Pradita Utama](https://t.me/react_id/79365)
+
+#### Referensi terkait SEO:
+
+1. [Mitos tentang SEO dan SPA](https://t.me/react_id/77390)
+2. [Javascript, Sosial Media dan SEO](https://medium.com/@pradita.utama/javascript-sosial-media-dan-seo-d9c4940e60fd)
+
+### Bagaimana mengatasi error CORS saat fetching API ?
+
+1. CORS itu harus diubah di sisi backend, bukan sisi front end.
+2. Jadi ketika kita mengakses resource dari domain / server tertentu, si server tersebut harus allow domain kita / semua domain untuk mengakses resource yang ada di servernya. Caranya (di sisi backend ya) dengan menambahkan response header `Access-Control-Allow-Origin: * `
+3. CORS itu bukan bug, dia adalah safety feature agar server API kita gak bisa diakses sembarangan oleh browser
+   [~Pradita Utama](https://t.me/react_id/55955)
+
+#### Referensi terkait CORS:
+
+1. [Gambaran tentang CORS](https://twitter.com/b0rk/status/1162392625057583104?s=19)

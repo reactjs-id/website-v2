@@ -5,11 +5,9 @@ import matter from 'gray-matter'
 import path from 'path'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
-import htmr from 'htmr'
 
 import { Content, Page, PageBody, PageHeader } from '~/components/layouts'
 import { postFilePaths, POSTS_PATH } from '~/utils/mdxUtils'
-import htmrTransform from '~/utils/htmrTransform'
 
 type PropsType = {
   source: string
@@ -19,13 +17,11 @@ type PropsType = {
 }
 
 export default function PostPage({ source, frontMatter }: PropsType) {
-  const content = htmr(source, { transform: htmrTransform })
-
   return (
     <Page title={frontMatter.title}>
       <Content>
         <PageHeader title={frontMatter.title} />
-        <PageBody>{content}</PageBody>
+        <PageBody content={source} />
       </Content>
     </Page>
   )
