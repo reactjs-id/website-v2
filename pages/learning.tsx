@@ -18,10 +18,10 @@ const LearningPage: NextPage = () => (
           <Heading fontFamily="body" fontWeight="300" mb="8px" as="h2" textTransform="uppercase" fontSize={20} textAlign="center">
             Ingin Belajar React?
           </Heading>
-          <Heading fontFamily="body" fontWeight="600" as="h2" textTransform="capitalize" fontSize={48} textAlign="center">
+          <Heading fontFamily="body" fontWeight="600" as="h2" fontSize={48} textAlign="center">
             Materi Pembelajaran
           </Heading>
-          <Text as="h2" mt="20px" mb="16px" textTransform="capitalize" fontSize={16} textAlign="center">
+          <Text as="h2" mt="20px" mb="16px" fontSize={16} textAlign="center">
             Beberapa konsep React memang terlihat janggal, tapi diluar itu React sangat mudah untuk dipelajari dan dipahami, baik mereka
             yang sudah mahir dalam JavaScript modern ataupun yang baru saja memulai. Cobalah memulai dari salah satu materi di bawah.
           </Text>
