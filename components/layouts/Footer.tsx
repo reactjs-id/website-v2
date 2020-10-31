@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => (
         </Text>
         <Text margin="0" lineHeight="20px" fontSize="12px">
           Kode sumber situs ini tersedia di{' '}
-          <Link href="https://github.com/reactjs-id/reactjs.id" isExternal color="#fff" rel="noopener noreferrer">
+          <Link href="https://github.com/reactjs-id/website" isExternal color="#fff" rel="noopener noreferrer">
             GitHub
           </Link>
           . Gambar latar disediakan oleh{' '}

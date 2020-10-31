@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { NextPage } from 'next'
+import { InferGetStaticPropsType, NextPage } from 'next'
 
 import { Box, Grid, Heading, Text } from '@chakra-ui/core'
 import { Content, Page } from '~/components/layouts'
@@ -7,18 +7,24 @@ import LearningCard from '~/components/learning/LearningCard'
 
 import learningResources from '~/resources/learnings.json'
 
-const featuredMaterials = learningResources.filter(item => item.featured)
-const theRest = learningResources.filter(item => !item.featured)
+export const getStaticProps = async () => {
+  const featuredMaterials = learningResources.filter(item => item.featured)
+  const theRest = learningResources.filter(item => !item.featured)
 
-const LearningPage: NextPage = () => (
+  return { props: { featuredMaterials, theRest } }
+}
+
+type LearningPageProps = InferGetStaticPropsType<typeof getStaticProps>
+
+const LearningPage: NextPage<LearningPageProps> = ({ featuredMaterials, theRest }) => (
   <Page title="Learning">
     <Content>
-      <Box as="section" backgroundColor="lightBlue" paddingX="8.5em" paddingY="6em">
-        <Grid gap="2px" justifyContent="center" gridAutoFlow="row" textAlign="center">
-          <Heading fontFamily="body" fontWeight="300" mb="8px" as="h2" textTransform="uppercase" fontSize={20} textAlign="center">
+      <Box as="section" backgroundColor="reactBlue.100" px={[4, null, null, 8]} py={['3.1em', null, null, '6.1em']}>
+        <Grid gap="2px" justifyContent="center" gridAutoFlow="row" textAlign="center" mx="auto" maxWidth="6xl">
+          <Heading as="span" fontFamily="body" fontWeight="300" mb="8px" textTransform="uppercase" fontSize={20} textAlign="center">
             Ingin Belajar React?
           </Heading>
-          <Heading fontFamily="body" fontWeight="600" as="h2" fontSize={48} textAlign="center">
+          <Heading as="h1" fontFamily="body" fontWeight="600" fontSize={48} textAlign="center">
             Materi Pembelajaran
           </Heading>
           <Text as="h2" mt="20px" mb="16px" fontSize={16} textAlign="center">
@@ -38,4 +44,5 @@ const LearningPage: NextPage = () => (
     </Content>
   </Page>
 )
+
 export default LearningPage
