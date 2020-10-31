@@ -2,16 +2,13 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 
-import { Page, PageHeader, PageBody } from '~/components/Layout'
-import Navigation from '~/components/Navigation'
-import Content from '~/components/Content'
+import { Content, Page, PageHeader, PageBody } from '~/components/layouts'
 import relativeTime from '~/utils/relativeTime'
 
 const lastUpdated = '2018-09-25T19:30:01+07:00'
 
 const AboutPage: NextPage = () => (
   <Page title="About">
-    <Navigation />
     <Content>
       <PageHeader title="About us." />
       <PageBody>

@@ -8,7 +8,7 @@ Bantu kami mengembangkan situs ReactJS Indonesia yang baru! Ikuti langkah-langka
 
 ## Mengembangkan di `localhost`
 
-Disarankan untun menggunakan [Node.js](https://nodejs.org/en/) versi >= 12.0.0 dengan [yarn](https://yarnpkg.com/) sebagai _package manager_.
+Disarankan untun menggunakan [Node.js](https://nodejs.org/en/) versi >= 12.0.0 dengan [yarn](https://yarnpkg.com/) sebagai _package manager_ (**bukan npm!**).
 
 ```bash
 # instal dependensi
