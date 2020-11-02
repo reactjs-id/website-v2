@@ -12,6 +12,13 @@ export default function CustomAppPage({ Component, pageProps, router }: AppProps
     <AppProvider>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#83e4fc" />
+        <meta name="theme-color" content="#83e4fc" />
       </Head>
 
       <DefaultSeo
