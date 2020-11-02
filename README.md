@@ -2,10 +2,6 @@
 
 > Source code for https://reactjs.id/
 
-Repositori ini berisi versi selanjutnya dari situs ReactJS Indonesia. Selama proses pengembangan, versi produksi repositori ini akan tersedia di [new.reactjs.id](https://new.reactjs.id/).
-
-Bantu kami mengembangkan situs ReactJS Indonesia yang baru! Ikuti langkah-langkah di bawah untuk memulai.
-
 ## Mengembangkan di `localhost`
 
 Disarankan untun menggunakan [Node.js](https://nodejs.org/en/) versi >= 12.0.0 dengan [yarn](https://yarnpkg.com/) sebagai _package manager_ (**bukan npm!**).
