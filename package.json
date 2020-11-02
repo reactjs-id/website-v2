@@ -1,10 +1,10 @@
 {
   "name": "@reactjs-id/website",
   "version": "1.0.0",
-  "description": "A New Web ReactJS Indonesia",
+  "description": "Source code for https://reactjs.id/",
   "main": "N/A",
   "repository": "https://github.com/reactjs-id/website",
-  "license": "Unlicense",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next",
