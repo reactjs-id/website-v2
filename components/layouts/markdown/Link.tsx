@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link as BaseLink, LinkProps } from '@chakra-ui/core'
+import { Link as BaseLink, LinkProps } from '@chakra-ui/react'
 
 const Link: React.FC<LinkProps> = ({ children, href }) => (
   <BaseLink

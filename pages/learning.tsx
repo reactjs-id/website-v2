@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { InferGetStaticPropsType, NextPage } from 'next'
 
-import { Box, Grid, Heading, Text } from '@chakra-ui/core'
+import { Box, Grid, Heading, Text } from '@chakra-ui/react'
 import { Content, Page } from '~/components/layouts'
 import LearningCard from '~/components/learning/LearningCard'
 
@@ -21,10 +21,10 @@ const LearningPage: NextPage<LearningPageProps> = ({ featuredMaterials, theRest 
     <Content>
       <Box as="section" backgroundColor="reactBlue.100" px={[4, null, null, 8]} py={['3.1em', null, null, '6.1em']}>
         <Grid gap="2px" justifyContent="center" gridAutoFlow="row" textAlign="center" mx="auto" maxWidth="6xl">
-          <Heading as="span" fontFamily="body" fontWeight="300" mb="8px" textTransform="uppercase" fontSize={20} textAlign="center">
+          <Heading as="span" fontFamily="body" fontWeight={300} mb={2} textTransform="uppercase" size="md" textAlign="center">
             Ingin Belajar React?
           </Heading>
-          <Heading as="h1" fontFamily="body" fontWeight="600" fontSize={48} textAlign="center">
+          <Heading as="h1" fontFamily="body" fontWeight={600} size="2xl" textAlign="center">
             Materi Pembelajaran
           </Heading>
           <Text as="h2" mt="20px" mb="16px" fontSize={16} textAlign="center">

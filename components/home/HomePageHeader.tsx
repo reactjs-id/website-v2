@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from '@chakra-ui/core'
+import { Box, Heading, Text } from '@chakra-ui/react'
 import * as React from 'react'
 
 import { LinkButton } from '~/components/ui'
@@ -21,10 +21,10 @@ const HomePageHeader: React.FC<HomePageHeaderProps> = ({ welcomeMessage, title, 
     >
       <Box mx="auto" maxWidth="6xl">
         <Box maxWidth={['100%', null, null, '50%']}>
-          <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" color="reactBlue.200" textTransform="uppercase" fontSize="lg">
+          <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" color="reactBlue.200" textTransform="uppercase" size="md">
             {welcomeMessage}
           </Heading>
-          <Heading as="h3" fontFamily="body" fontWeight="500" color="white" fontSize="5xl">
+          <Heading as="h3" fontFamily="body" fontWeight="500" color="white" size="2xl">
             {title}
           </Heading>
           <Text as="p" my="20px" color="white" fontFamily="body">

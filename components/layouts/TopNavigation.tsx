@@ -11,7 +11,8 @@ import {
   DrawerBody,
   useDisclosure,
   IconButton
-} from '@chakra-ui/core'
+} from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import { NextChakraLink } from '~/components/helpers'
 import theme from '~/utils/theme'
 import { Logo } from '../ui'
@@ -28,7 +29,7 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => {
       templateColumns={`1fr 1fr minmax(auto, ${theme.sizes['6xl']}) 1fr 1fr`}
       backgroundColor="gray.900"
       color="white"
-      h={80}
+      height={['88px', '80px']}
       zIndex={50}
     >
       <List display="flex" flexWrap="wrap" alignItems="center" gridColumn="3/4" m={0} p={0}>
@@ -46,7 +47,7 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => {
           </NextChakraLink>
         </ListItem>
 
-        <ListItem display={{ xs: 'none', sm: 'flex' }} alignItems="center" h="100%">
+        <ListItem display={['none', 'flex']} alignItems="center" h="100%">
           <NextChakraLink
             href="/community"
             display="flex"
@@ -62,7 +63,7 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => {
           </NextChakraLink>
         </ListItem>
 
-        <ListItem display={{ xs: 'none', sm: 'flex' }} alignItems="center" h="100%">
+        <ListItem display={['none', 'flex']} alignItems="center" h="100%">
           <NextChakraLink
             href="/submit-a-talk"
             display="flex"
@@ -78,7 +79,7 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => {
           </NextChakraLink>
         </ListItem>
 
-        <ListItem display={{ xs: 'none', sm: 'flex' }} alignItems="center" h="100%">
+        <ListItem display={['none', 'flex']} alignItems="center" h="100%">
           <NextChakraLink
             href="/faq"
             display="flex"
@@ -94,8 +95,8 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ title }) => {
           </NextChakraLink>
         </ListItem>
 
-        <ListItem py="1.5rem" px="1rem" display={{ xs: 'flex', sm: 'none' }} alignItems="center" h="100%">
-          <IconButton variant="outline" aria-label="Open menu" icon="drag-handle" onClick={onOpen} />
+        <ListItem py="1.5rem" px="1rem" display={['flex', 'none']} alignItems="center" h="100%">
+          <IconButton variant="outline" aria-label="Open menu" icon={<HamburgerIcon />} onClick={onOpen} />
 
           <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
             <DrawerOverlay />
