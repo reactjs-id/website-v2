@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Box, Heading } from '@chakra-ui/core'
+import { Box, Heading } from '@chakra-ui/react'
 import theme from '~/utils/theme'
 
 interface PageHeaderProps {

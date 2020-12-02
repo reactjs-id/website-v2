@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Stack, Grid, Text, Link } from '@chakra-ui/core'
+import { Stack, Grid, Text, Link } from '@chakra-ui/react'
 
 interface FooterProps {
   className?: string

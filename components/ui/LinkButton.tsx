@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Link, Text, Icon, LinkProps } from '@chakra-ui/core'
+import { Link, Text, LinkProps } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 const LinkButton: React.FC<LinkProps> = ({ children, ...props }) => (
   <Link
@@ -16,7 +17,7 @@ const LinkButton: React.FC<LinkProps> = ({ children, ...props }) => (
     {...props}
   >
     <Text>{children}</Text>
-    <Icon name="arrow-forward" size="21px" ml="8px" />
+    <ArrowForwardIcon size="21px" ml="8px" />
   </Link>
 )
 

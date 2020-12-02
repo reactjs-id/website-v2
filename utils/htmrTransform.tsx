@@ -1,4 +1,4 @@
-import { Code } from '@chakra-ui/core'
+import { Code } from '@chakra-ui/react'
 
 import { Link, H1, H2, H3, H4, H5, H6, UL, LI, OL, P } from '~/components/layouts/markdown'
 

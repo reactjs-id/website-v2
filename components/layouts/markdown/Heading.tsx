@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Heading, HeadingProps } from '@chakra-ui/core'
+import { Heading, HeadingProps } from '@chakra-ui/react'
 
 const DEFAULT_HEADING_WEIGHT = 600
 

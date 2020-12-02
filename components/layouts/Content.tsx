@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/core'
+import { Box } from '@chakra-ui/react'
 import * as React from 'react'
 
 const Content: React.FC = ({ children }) => {

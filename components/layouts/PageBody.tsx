@@ -1,4 +1,4 @@
-import { Box, Stack } from '@chakra-ui/core'
+import { Box, Stack } from '@chakra-ui/react'
 import * as React from 'react'
 import convert from 'htmr'
 import htmrTransform from '~/utils/htmrTransform'

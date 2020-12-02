@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/react'
 import * as React from 'react'
 
 const AppRoot: React.FC = ({ children }) => {
