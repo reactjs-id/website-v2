@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { NextPage } from 'next'
 import NextLink from 'next/link'
-import { Box, Flex, Heading, Text, Grid, Image } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text, Grid, Img } from '@chakra-ui/react'
 
 import { Content, Page } from '~/components/layouts'
 import { HomePageHeader } from '~/components/home'
@@ -20,7 +20,7 @@ const IndexPage: NextPage = () => (
       <Box backgroundColor="#f2f2f2" px={[4, null, null, 8]} py={['3.1em', null, null, '6.1em']}>
         <Box mx="auto" maxWidth="6xl">
           <Grid gridTemplateColumns={['1fr', null, null, '1fr 1fr']} gridGap={8} alignItems="center">
-            <Image
+            <Img
               display={['none', null, null, 'block']}
               gridColumn={1}
               width="400px"
