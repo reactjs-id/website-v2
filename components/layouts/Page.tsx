@@ -1,17 +1,21 @@
 import * as React from 'react'
 import { NextSeo } from 'next-seo'
 
-import styles from './Page.module.css'
+import TopNavigation from './TopNavigation'
+import AppRoot from './AppRoot'
+import Footer from './Footer'
 
 interface PageProps {
   title?: string
 }
 
 const Page: React.FC<PageProps> = ({ children, title }) => (
-  <div className={styles.root}>
+  <AppRoot>
     <NextSeo title={title || ''} />
+    <TopNavigation title={title || ''} />
     {children}
-  </div>
+    <Footer />
+  </AppRoot>
 )
 
 export default Page

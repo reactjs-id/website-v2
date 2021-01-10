@@ -1,23 +1,29 @@
-# nextjs-typescript-quickstart
+# @reactjs-id/website
 
-> Get started on Next.js with TypeScript in seconds.
+> Source code for https://reactjs.id/
 
-This is an example setup of Next.js building on top of the [official TypeScript example](https://github.com/zeit/next.js/tree/master/examples/with-typescript). It adds the following:
+## Mengembangkan di `localhost`
 
-- Simple styling structure with [CSS Modules](https://github.com/css-modules/css-modules)
-- Basic ESLint and Prettier setup
-- TypeScript typechecking as part of `test` script (ready to plug into any CI)
-
-## How to use
-
-[Download the example](https://github.com/resir014/nextjs-typescript-quickstart/archive/master.zip) and then unzip it.
-
-Install it and run:
+Disarankan untun menggunakan [Node.js](https://nodejs.org/en/) versi >= 12.0.0 dengan [yarn](https://yarnpkg.com/) sebagai _package manager_ (**bukan npm!**).
 
 ```bash
+# instal dependensi
 yarn
+
+# jalankan secara lokal di `localhost:3000`
 yarn dev
-# or
-npm install
-npm run dev
+
+# buat _production build_
+yarn build
+
+# jalankan tes (linting + _type check_)
+yarn test
 ```
+
+## Berkontribusi
+
+Kami menerima _pull requests_ dari siapapun! Silakan membaca [Panduan Berkontribusi](CONTRIBUTING.md) untuk informasi lebih lanjut.
+
+## Credits
+
+Dibuat dengan [Next.js](https://nextjs.org/).

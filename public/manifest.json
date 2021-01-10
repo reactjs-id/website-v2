@@ -1,0 +1,20 @@
+{
+  "name": "ReactJS Indonesia",
+  "short_name": "ReactJS ID",
+  "start_url": "/",
+  "background_color": "#091219",
+  "theme_color": "#83e4fc",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
