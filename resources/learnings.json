@@ -3,13 +3,13 @@
     "type": "Dokumentasi",
     "title": "Dokumentasi React (EN)",
     "description": "Dokumentasi React merupakan sumber daya React terlengkap. Anda dapat menemukan segalanya, mulai dari referensi API, tutorial praktis cara mengaplikasikan React pada sebuah aplikasi, hingga update terbaru mengenai React.",
-    "url": "https://reactjs.org"
+    "url": "https://react.dev"
   },
   {
     "type": "Dokumentasi",
     "title": "Dokumentasi React (ID)",
     "description": "Dokumentasi React juga tersedia dalam Bahasa Indonesia. Anda juga dapat berkontribusi menerjemahkan dokumentasi React melalui GitHub reactjs/id.reactjs.org.",
-    "url": "https://id.reactjs.org",
+    "url": "https://id.react.dev",
     "featured": true
   },
   {
