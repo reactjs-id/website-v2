@@ -11,9 +11,9 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: yarn install --frozen-lockfile
-      - uses: actions/cache@v1
+      - uses: actions/cache@v4
         id: cache-build
         with:
           path: '.'
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/cache@v1
+      - uses: actions/cache@v4
         id: restore-build
         with:
           path: '.'
